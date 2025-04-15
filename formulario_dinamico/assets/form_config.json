@@ -1,0 +1,36 @@
+[
+    {
+        "name": "nombre",
+        "type": "text",
+        "label": "Nombre",
+        "validators": [
+            "required"
+        ]
+    },
+    {
+        "name": "apellido",
+        "type": "text",
+        "label": "Apellido",
+        "validators": [
+            "required"
+        ]
+    },
+    {
+        "name": "edad",
+        "type": "text",
+        "label": "edad",
+        "validators": [
+            "required",
+            "numeric"
+        ]
+    },
+    {
+        "name": "email",
+        "type": "email",
+        "label": "Correo electrónico",
+        "validators": [
+            "required",
+            "email"
+        ]
+    }
+]

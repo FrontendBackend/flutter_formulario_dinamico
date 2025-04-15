@@ -1,0 +1,75 @@
+[
+    
+    {
+        "type": "text",
+        "name": "nombre",
+        "label": "Nombre",
+        "required": true
+    },
+    {
+        "type": "text",
+        "name": "segundo nombre",
+        "label": "segundo nombre",
+        "required": false
+    },
+    {
+        "type": "text",
+        "name": "apellido",
+        "label": "Apellido",
+        "required": true
+    },
+    {
+        "type": "email",
+        "name": "correo",
+        "label": "Correo Electrónico",
+        "required": true
+    },
+    {
+        "type": "number",
+        "name": "edad",
+        "label": "Edad",
+        "required": true
+    },
+    {
+        "type": "dropdown",
+        "name": "genero",
+        "label": "Género",
+        "required": true,
+        "options": [
+            "Masculino",
+            "Femenino",
+            "Otro"
+        ]
+    },
+    {
+        "type": "date",
+        "name": "fecha_nacimiento",
+        "label": "Fecha de Nacimiento",
+        "required": false
+    },
+    {
+        "type": "checkbox",
+        "name": "terminos",
+        "label": "Acepto los términos y condiciones",
+        "required": true
+    },
+    {
+        "type": "slider",
+        "name": "satisfaccion",
+        "label": "Nivel de satisfacción",
+        "min": 0,
+        "max": 10,
+        "divisions": 10,
+        "initialValue": 5
+    },
+    {
+        "type": "button",
+        "label": "Enviar",
+        "action": "submit"
+    },
+    {
+        "type": "button",
+        "label": "Limpiar",
+        "action": "reset"
+    }
+]
