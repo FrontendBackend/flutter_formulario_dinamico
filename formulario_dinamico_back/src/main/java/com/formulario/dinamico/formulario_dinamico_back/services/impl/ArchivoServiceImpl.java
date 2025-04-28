@@ -36,7 +36,7 @@ public class ArchivoServiceImpl implements ArchivoService {
 
         return tblArchivoDTOCreado;
     }
-
+    
     @Override
     public List<TblArchivoDTO> mostrarArchivos() {
         List<TblArchivoDTO> lTblArchivoDTO = this.archivoRepository.mostrarArchivos();

@@ -42,6 +42,12 @@ public class ResponseDTO {
         this.mensaje = mensaje;
     }
 
+    public ResponseDTO(TipoResultado tipoResultado, List<?> lista, String mensaje) {
+        this.tipoResultado = tipoResultado;
+        this.lista = lista;
+        this.mensaje = mensaje;
+    }
+
     public ResponseDTO(TipoResultado tipoResultado, Number valor, String mensaje) {
         this.tipoResultado = tipoResultado;
         this.valor = valor;

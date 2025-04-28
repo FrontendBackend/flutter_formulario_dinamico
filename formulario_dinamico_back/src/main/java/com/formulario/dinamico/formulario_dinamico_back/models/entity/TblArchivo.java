@@ -29,6 +29,7 @@ public class TblArchivo implements Serializable {
     private String nombreArchivo;
 
     @Lob
-    @Column(name = "ARCHIVO", columnDefinition = "TEXT")
+    @Column(name = "ARCHIVO", columnDefinition = "BLOB") // <= SQlite(columnDefinition = "BLOB") | posgreSQL(columnDefinition = "TEXT")
     private String archivo;
+    // private byte[] archivo; // => con este tipo de datos funciona de igual manera
 }

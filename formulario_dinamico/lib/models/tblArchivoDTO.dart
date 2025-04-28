@@ -1,9 +1,9 @@
 class TblArchivoDTO {
-  final int idArchivo;
+  final int? idArchivo;
   final String? nombreArchivo;
   final String? archivo;
 
-  TblArchivoDTO({required this.idArchivo, required this.nombreArchivo, required this.archivo});
+  TblArchivoDTO({ this.idArchivo, this.nombreArchivo, this.archivo});
 
   factory TblArchivoDTO.fromJson(Map<String, dynamic> json) {
     return TblArchivoDTO(
