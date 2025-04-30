@@ -21,7 +21,7 @@ class _UbicacionState extends State<Ubicacion>
   String ubicacion = 'Presiona el botón para obtener ubicación';
   bool cargandoUbicacion = false;
   final String mapboxToken =
-      'pk.eyJ1IjoicHJlc2xleXJvbWVybyIsImEiOiJjbWEzMGhlZ2IxanM3MnJva3huc3phbnVoIn0.TmvBbdXYUbh0b5igSmMz4w';
+      'pk.eyJ1IjoidmFsZXJpb3VzIiwiYSI6ImNtYTMxZWk1ZzJ1ZjMyaW13b2R0a21nZTYifQ.2BRxdgXTBSm7IN2VSkwfYg';
   late AnimationController _animController;
   late Animation<double> _bounceAnimation;
   List<Placemark> placemarks = [];
