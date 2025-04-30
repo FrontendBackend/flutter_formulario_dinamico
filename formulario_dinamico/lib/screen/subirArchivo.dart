@@ -1,7 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:convert';
-import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
@@ -21,9 +20,9 @@ class SubirArchivo extends StatefulWidget {
 class _SubirArchivoState extends State<SubirArchivo> {
   final formularioService = FormService();
   final _formKey = GlobalKey<FormState>();
-  String? nombre;
-  int? edad;
-  File? archivo;
+  // String? nombre;
+  // int? edad;
+  // File? archivo;
   String? archivoBase64;
   Uint8List? imagenBytes; // Agrega esto como variable de estado
   String? nombreArchivo; // también agrégala como variable de estado

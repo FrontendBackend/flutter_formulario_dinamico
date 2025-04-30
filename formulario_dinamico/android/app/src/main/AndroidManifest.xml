@@ -1,8 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:label="formulario_dinamico"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <!-- <meta-data android:name="com.mapbox.maps.token"
+            android:value="pk.eyJ1IjoidmFsZXJpb3VzIiwiYSI6ImNtYTMxZWk1ZzJ1ZjMyaW13b2R0a21nZTYifQ.2BRxdgXTBSm7IN2VSkwfYg" /> -->
         <activity
             android:name=".MainActivity"
             android:exported="true"

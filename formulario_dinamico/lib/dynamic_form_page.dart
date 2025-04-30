@@ -5,7 +5,7 @@ import 'package:formulario_dinamico/formFieldModel.dart';
 import 'package:formulario_dinamico/form_service.dart';
 
 class DynamicFormPage extends StatefulWidget {
-  const DynamicFormPage({Key? key}) : super(key: key);
+  const DynamicFormPage({super.key});
 
   @override
   State<DynamicFormPage> createState() => _DynamicFormPageState();
