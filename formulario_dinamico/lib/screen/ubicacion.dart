@@ -21,7 +21,7 @@ class _UbicacionState extends State<Ubicacion>
   String ubicacion = 'Presiona el botón para obtener ubicación';
   bool cargandoUbicacion = false;
   final String mapboxToken =
-      'pk.eyJ1IjoidmFsZXJpb3VzIiwiYSI6ImNtYTMxZWk1ZzJ1ZjMyaW13b2R0a21nZTYifQ.2BRxdgXTBSm7IN2VSkwfYg';
+      'pk.eyJ1IjoidmFsZXJpb3VzIiwiYSI6ImNtYTMxZWk1ZzJ1ZjMyaW13b2R0a21nZTYifQ.2BRxdgXTBSm7IN2VSkwfYggt';
   late AnimationController _animController;
   late Animation<double> _bounceAnimation;
   List<Placemark> placemarks = [];
@@ -179,9 +179,9 @@ class _UbicacionState extends State<Ubicacion>
             children: [
               TileLayer(
                 urlTemplate:
-                    'https://api.mapbox.com/styles/v1/mapbox/streets-v12/tiles/{z}/{x}/{y}?access_token=$mapboxToken',
+                    'https://api.mapbox.com/styles/v1/{id}/{z}/{x}/{y}?access_token={accessToken}',
                     // 'https://api.mapbox.com/styles/v1/valerious/cma31jwd3000101s7eg6wb72k/tiles/256/{z}/{x}/{y}@2x?access_token=$mapboxToken',
-                additionalOptions: {'accessToken': mapboxToken},
+                additionalOptions: {'accessToken': mapboxToken, 'id': 'mapbox/streets-v12/tiles'},
               ),
               if (_coordenadas != null)
                 MarkerLayer(
